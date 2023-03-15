@@ -1,18 +1,20 @@
-let value_city = []   //  Váriavel global tipo array:
-
+let valor_cidade = []   //  Váriavel global tipo array:
+let res = document.getElementById ("res")
 
 
 function inserir(){
-    let  city = document.getElementById("city").value
-    value_city.push(city)
-   console.log(value_city)
+    let cidade = document.getElementById("cidade").value
+    valor_cidade.push(cidade)
+   console.log(valor_cidade)
+   res.innerHTML = valor_cidade
+
 }
 
 
 
 function excluir(){
-    value_city.pop(cidade)
-    console.log(city)
-
+    valor_cidade.pop()
+    console.log(valor_cidade)
+    res.innerHTML = valor_cidade
 
 }
